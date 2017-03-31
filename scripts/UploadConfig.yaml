@@ -1,0 +1,9 @@
+ip: 10.67.68.67
+pass: "root"
+login: "root"
+portIP: 22
+portCOM: 9
+pathWeekly: "Z:\\Weekly\\"
+pathDaily: "Z:\\Daily\\"
+pathEng: "Z:\\Engineering\\"
+pathDst: "E:\\NewEmagesDownload\\"

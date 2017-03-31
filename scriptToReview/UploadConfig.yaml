@@ -1,0 +1,10 @@
+ip: #  IP f.e.: "123.123.123.1"
+pass: "root"
+login: "root"
+portIP: 22
+portCOM: # COM PORT f.e.: "COM123"
+pathWeekly: "Path:\\to\\Weekly\\"
+pathDaily: "Path:\\to\\Daily\\"
+pathEng: "Path:\\to\\Engineering\\"
+pathDst: "/mnt/"
+email: 'actual@email.address'

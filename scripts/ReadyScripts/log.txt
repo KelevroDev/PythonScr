@@ -1,0 +1,100 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/urllib/request.py", line 1182, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "/usr/lib/python3.4/http/client.py", line 1088, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python3.4/http/client.py", line 1126, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python3.4/http/client.py", line 1084, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python3.4/http/client.py", line 922, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.4/http/client.py", line 857, in send
+    self.connect()
+  File "/usr/lib/python3.4/http/client.py", line 1231, in connect
+    server_hostname=server_hostname)
+  File "/usr/lib/python3.4/ssl.py", line 365, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "/media/yoctoadm/YoctoDisc/reports/integration-tools/scripts/report_generator_lib/crusible_report/CrucibleReport.py", line 62, in _processFoo
+    commit.getReviewKey()
+  File "/media/yoctoadm/YoctoDisc/reports/integration-tools/scripts/report_generator_lib/crusible_report/Commit.py", line 62, in getReviewKey
+    changeSetData = self.parent.cru.getReviewsForChangeset(self.REPO_NAME, self.cl)
+  File "/media/yoctoadm/YoctoDisc/reports/integration-tools/scripts/report_generator_lib/crusible_report/Crucible.py", line 120, in getReviewsForChangeset
+    return json.loads(request.urlopen(request.Request(url, data, headers)).read().decode(errors = "ignore"))
+  File "/usr/lib/python3.4/urllib/request.py", line 161, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.4/urllib/request.py", line 463, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.4/urllib/request.py", line 481, in _open
+    '_open', req)
+  File "/usr/lib/python3.4/urllib/request.py", line 441, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.4/urllib/request.py", line 1225, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "/usr/lib/python3.4/urllib/request.py", line 1184, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 104] Connection reset by peer>
+
+Exception in thread Thread-8:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/urllib/request.py", line 1182, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "/usr/lib/python3.4/http/client.py", line 1088, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python3.4/http/client.py", line 1126, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python3.4/http/client.py", line 1084, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python3.4/http/client.py", line 922, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.4/http/client.py", line 857, in send
+    self.connect()
+  File "/usr/lib/python3.4/http/client.py", line 1231, in connect
+    server_hostname=server_hostname)
+  File "/usr/lib/python3.4/ssl.py", line 365, in wrap_socket
+    _context=self)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "/media/yoctoadm/YoctoDisc/reports/integration-tools/scripts/report_generator_lib/crusible_report/CrucibleReport.py", line 62, in _processFoo
+    commit.getReviewKey()
+  File "/media/yoctoadm/YoctoDisc/reports/integration-tools/scripts/report_generator_lib/crusible_report/Commit.py", line 62, in getReviewKey
+    changeSetData = self.parent.cru.getReviewsForChangeset(self.REPO_NAME, self.cl)
+  File "/media/yoctoadm/YoctoDisc/reports/integration-tools/scripts/report_generator_lib/crusible_report/Crucible.py", line 120, in getReviewsForChangeset
+    return json.loads(request.urlopen(request.Request(url, data, headers)).read().decode(errors = "ignore"))
+  File "/usr/lib/python3.4/urllib/request.py", line 161, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.4/urllib/request.py", line 463, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.4/urllib/request.py", line 481, in _open
+    '_open', req)
+  File "/usr/lib/python3.4/urllib/request.py", line 441, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.4/urllib/request.py", line 1225, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "/usr/lib/python3.4/urllib/request.py", line 1184, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 104] Connection reset by peer>

@@ -1,0 +1,45 @@
+
+
+Download scripts from: https://adc.luxoft.com/stash/projects/LUXTOOLS/repos/integration-tools/browse/scripts
+
+
+
+4796814 -------------------------------------------
+
+
+
+
+In file "runAllReports.sh" change CL and actual folder to build and folder for reports
+F.E. 
+	pathToProject='/actual/folder/to/progect'
+	cl='1234567'
+	pathToArt='/actual/folder/to/reports'
+	pathToLog=log_$cl
+	mkdir $pathToLog
+	mkdir $pathToArt'/Generated_Reports'
+
+In file "run_crucible_report.py" change:
+Line - 29
+1.  path_to_p4             = '/usr/local/bin/p4'
+    server                 = '172.30.89.148'
+    user                   = 'P4 username'
+    password               = 'P4 password'
+Line - 50
+2.  x.url = "https://adc.luxoft.com/fisheye/"
+    x.user = 'luxoft username'
+    x.password = 'luxoft password'
+    x.threadCount = 12
+    x.endCall = foo
+
+In file "tse_tests_results.py":
+Line - 35
+    x.targetIp = "123.123.123.1" - real MEU IP 
+
+
+Precondition:
+	In perforce: sync to needed CL
+	Start BuildCentral.sh
+	Start session "[Elina2] - All + Lint + Loc + test"
+	Clean folder '/actual/folder/to/reports'
+
+Run "runAllReports.sh"

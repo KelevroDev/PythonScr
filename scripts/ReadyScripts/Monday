@@ -1,0 +1,47 @@
+Monday
+Process Elvis tickets - done
+Create BuildInfo - done
+
+
+Tuesday
+build full partition - new TTS, new IAP db, new HTNL5 sources, update rootfs, update uImage, git pull origin master - Evgeniy
+Create Release Notes, send to Stefan, he will send to MSchmid - Evgeniy
+Build CoC System CW41 on Bamboo - Kirill (Thomas about kernel)
+Submit CoC System p4inc - Evgeniy
+get all Navigation adaptation in pending changelists
+get HMI delivery at 16:00
+Build binaries Navigation adaptation + changelist with Navigation binaries + CoC-System CW41 - Evgeniy
+Build an image like Engineering drop - Kirill
+
+Wednesday
+morning: get Navigation binaries from Jenkins (ask Manuel for help):
+adresses:
+http://himglxdvbld01.ad.harman.com:8080/jenkins/job/NavCtrl_linux_dev_armv7-meucy17-adt4.9.1-osz-trc-rel-rtti_CLEAN/
+http://himglxdvbld01.ad.harman.com:8080/jenkins/job/NavCtrl_linux_dev_armv7-meucy17-adt4.9.1-osz-trc-rel-rtti_CLEAN/175/artifact/
+http://himglxdvbld01.ad.harman.com:8080/jenkins/job/P004_linux_Trunk_armv7-meucy17-adt4.9.1-osz-trc-rel-rtti_CLEAN/
+http://himglxdvbld01.ad.harman.com:8080/jenkins/job/P004_linux_Trunk_armv7-meucy17-adt4.9.1-osz-trc-rel-rtti_CLEAN/lastSuccessfulBuild/artifact/
+flash an image 
+replace Navigation binaries
+make sure that image is workable
+make tests for L2
+write the letter Engineering drop available
+
+if image is OK and Navigation is good you can deliver it like Daily
+
+
+Thursday
+receive Navigation delivery, edit Navigation p4inc, submit, revert shelved Navigation api   
+merge Navigation recipes - Kirill
+at 15:00 - make sync and build project
+at 16:00 
+Build binaries - Evgeniy
+Get HMI delivery - Evgeniy
+Edit recipes and trigger build - Kirill
+
+Friday
+Write mail with request to test the Weekly Candidate
+Test Weekly image L2 plus T2
+Decision is the image Weekly
+Elvis ticket processing
+BuildInfo
+Release Notes

@@ -1,0 +1,12 @@
+ip: 10.67.68.67
+login: root
+nameR: TOYOTA_CY17_MEU_A17074A_AppOnlDiagHMISWSysSWUpdVR_A+.rootfs.ext3
+nameU: uImage--3.10.17-r0-meucy17-t101-a0-20170201150644.bin
+pass: root
+pathDaily: X:\Daily\
+pathDst: F:\NewEmagesDownload\
+pathEng: X:\Engineering\
+pathForAll: X:\
+pathWeekly: X:\Weekly\
+portCOM: 9
+portIP: 22
