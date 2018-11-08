@@ -20,7 +20,7 @@ while 1:
 		ser.writeline("mount /dev/sda1 /mnt")
 
 		ser.writeline("flash....***")
-		except ser.SerialTimeoutException:
+	except ser.SerialTimeoutException:
 		print('Data could not be read')
 		time.sleep(1)
 
